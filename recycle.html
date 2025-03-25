@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Education | Clean Earth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #006341;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #006341;
+            margin-top: 30px;
+            border-bottom: 2px solid #006341;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #006341;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #006341;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .recycling-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+        .accepted, .not-accepted {
+            flex-basis: 48%;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .accepted {
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+        }
+        .not-accepted {
+            background-color: #ffebee;
+            border: 1px solid #ef9a9a;
+        }
+        .benefits {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+            border: 1px solid #90caf9;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .check-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .check-item input {
+            margin-right: 10px;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .accepted, .not-accepted {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clean Earth</h1>
+            <p>Recycling Education & Guidelines</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="ht.html" class="back-button">← Back to Home</a>
+        
+        <section class="benefits">
+            <h2>The Benefits of Recycling</h2>
+            <ul>
+                <li><strong>Conserves Natural Resources:</strong> Recycling reduces the need to extract raw materials, preserving forests, water, and mineral resources.</li>
+                <li><strong>Saves Energy:</strong> Manufacturing products from recycled materials typically requires less energy than producing them from raw materials.</li>
+                <li><strong>Reduces Landfill Waste:</strong> Recycling diverts waste from landfills, extending their lifespan and reducing methane emissions.</li>
+                <li><strong>Lowers Greenhouse Gas Emissions:</strong> By reducing energy consumption and landfill waste, recycling helps combat climate change.</li>
+                <li><strong>Creates Jobs:</strong> The recycling industry creates significantly more jobs than landfilling or incineration.</li>
+                <li><strong>Protects Ecosystems:</strong> Proper waste disposal prevents pollution of waterways and natural habitats.</li>
+            </ul>
+        </section>
+
+        <div class="recycling-section">
+            <div class="accepted">
+                <h2>Accepted in Your Bin</h2>
+                <p>These items can go in your recycling bin, as long as they're clean and dry.</p>
+                
+                <h3>Plastic Bottles & Containers</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="plastic1" checked disabled>
+                    <label for="plastic1">Clean and dry containers, then put the cap back on before tossing in the bin</label>
+                </div>
+                
+                <h3>Food & Beverage Cans</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="cans1" checked disabled>
+                    <label for="cans1">Aluminum and steel cans (rinse clean)</label>
+                </div>
+                
+                <h3>Paper & Cardboard</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="paper1" checked disabled>
+                    <label for="paper1">Flattened cardboard & paperboard</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="paper2" checked disabled>
+                    <label for="paper2">Cardboard pizza delivery boxes without leftovers or liners</label>
+                </div>
+                
+                <h3>Glass Bottles & Containers</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="glass1" checked disabled>
+                    <label for="glass1">Clean glass bottles and jars (remove lids)</label>
+                </div>
+            </div>
+            
+            <div class="not-accepted">
+                <h2>Not Accepted in Your Bin</h2>
+                <p>Try to reduce and reuse these items instead of putting them in the trash.</p>
+                
+                <h3>No Bagged Recyclables</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="no1" checked disabled>
+                    <label for="no1">Empty recyclables directly into your cart and reuse the bag</label>
+                </div>
+                
+                <h3>No Plastic Bags/Wrap/Film</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="no2" checked disabled>
+                    <label for="no2">Do not bag recyclables - materials inside may not get recycled</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="no3" checked disabled>
+                    <label for="no3">No flexible packaging (typically multi-material)</label>
+                </div>
+                
+                <h3>No Tangling Items</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="no4" checked disabled>
+                    <label for="no4">Items that can wrap around equipment (hoses, wires, etc.)</label>
+                </div>
+                
+                <h3>No Contaminated Items</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="no5" checked disabled>
+                    <label for="no5">No dirty diapers or medical waste</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="no6" checked disabled>
+                    <label for="no6">No cups with wax or plastic coatings</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="no7" checked disabled>
+                    <label for="no7">No polystyrene foam & plastic</label>
+                </div>
+                
+                <h3>No Household Items</h3>
+                <div class="check-item">
+                    <input type="checkbox" id="no8" checked disabled>
+                    <label for="no8">Check local programs for reuse/recycling options first</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+            * Recyclable items can vary based on your location. Check local programs to find out what is recyclable in your area.
+        </div>
+        
+        <a href="ht.html" class="back-button">← Back to Home</a>
+    </div>
+</body>
+</html>
